@@ -1,0 +1,38 @@
+<core:View controllerName="Cloud_Group1_ProjectCloud_Group1_Project.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+	<App>
+		<pages>
+			<Page title="Assign2">
+				<headerContent>
+					<Button text="검색" id="button" type="Reject" />
+				</headerContent>
+				<content>
+					<f:SimpleForm title="검색조건">
+						<core:Title text="검색조건" />
+						<Label text="이름" labelFor="name" design="Bold" />
+						<Input id="name" required="true" />
+						<Label text="고객등급" labelFor="grade" design="Bold" />
+						<RadioButtonGroup id="grade" columns="3">
+							<RadioButton text="A" id="A" />
+							<RadioButton text="B" id="B" />
+							<RadioButton text="C" id="C" />
+							<RadioButton text="D" id="D" />
+							<RadioButton text="E" id="E" />
+						</RadioButtonGroup>
+						<core:Title />
+						<Label text="항공사" labelFor="airline" design="Bold" />
+						<ComboBox id="airline">
+							<items>
+								<core:Item key="A" text="대한항공" />
+							</items>
+						</ComboBox>
+						<Label text="취소여부" labelFor="cancel" design="Bold" />
+						<CheckBox id="cancel" text="취소" valueState="Error" />
+					</f:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</core:View>
